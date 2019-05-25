@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   fetchMovie = (searchInput) => {
-    return fetch(`http://www.omdbapi.com/?t=${searchInput}&apikey=79fe984`)
+    return fetch(`http://www.omdbapi.com/?t=${searchInput}&apikey=${YOUR_API_KEY}`)
     .then((response) => response.json())
     .then((data) => data)
     .catch((e) => console.log(e))
